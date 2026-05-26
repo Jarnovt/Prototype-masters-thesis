@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def load_approaches_data():
-    df_approaches = pd.read_excel("C:/Users/20182463/Desktop/Master/Thesis/Code/Data/evaluation_metrics.xlsx", sheet_name = "Methods (2)")
+    df_approaches = pd.read_excel("/Data/evaluation_metrics.xlsx", sheet_name = "Methods (2)")
     return df_approaches
 
 def find_no_req(df_approaches):
