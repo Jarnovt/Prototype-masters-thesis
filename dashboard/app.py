@@ -45,6 +45,11 @@ if not st.session_state.app_started:
     st.markdown(
         """
         <p style="color:#000000;">
+        <b>Goal of the tool</b><br>
+        - We want to make the process of finding XAI methods and evaluation approaches simpler and more accessible<br>
+        - This prototype should be able to guide any system designer to a fitting XAI method depending on their problem (if one exists)<br>
+        - By selecting which additional requirements apply to your problem, the tool also provides potential evaluation approaches to evaluate the selected XAI method<br>
+        - To create insight into how your answers impact the potential pool of methods, we have the option to look ahead on the right and the option to look back within the decision tree<br>
         <b>How to use</b><br>
         - Click the answer(s) most fitting your problem<br>
         - Some questions allow for multiple answers, in that case select all that apply<br>
