@@ -160,7 +160,7 @@ else:
                     for i, col in enumerate(st.session_state.cols):     # For each solution, create button
                         with col:
                             st.write(f':gray[{st.session_state.answ_options[i]}]') 
-                            st.image(f"icons_DB/"+st.session_state.answ[0]+'/'+st.session_state.answ[2].split(',')[i]+'.png', caption=f"testpicture{i+1}")
+                            st.image(f"dashboard/icons_DB/"+st.session_state.answ[0]+'/'+st.session_state.answ[2].split(',')[i]+'.png', caption=f"testpicture{i+1}")
                             if st.button(f"Answer {i+1}", key=f"btn_{i}"):      # Selected answer
                                 # Processs answer
                                 st.session_state.df_factual, st.session_state.decision_log = process_answer_updated(
@@ -181,7 +181,7 @@ else:
                             # Create answer options
                             option = st.session_state.answ[2].split(',')[i]
                             st.write(f':gray[{st.session_state.answ_options[i]}]')
-                            st.image(f"icons_DB/{st.session_state.answ[0]}/{option}.png",caption=f"testpicture{i+1}")
+                            st.image(f"dashboard/icons_DB/{st.session_state.answ[0]}/{option}.png",caption=f"testpicture{i+1}")
                             # Create buttons for the answers
                             if st.button(f"Answer {i+1}", key=f"btn_{i}"):
                                 # Removes answer if it is already there
