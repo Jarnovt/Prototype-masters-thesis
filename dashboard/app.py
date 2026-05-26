@@ -48,8 +48,8 @@ if not st.session_state.app_started:
         <b>How to use</b><br>
         - Click the answer(s) most fitting your problem<br>
         - Some questions allow for multiple answers, in that case select all that apply<br>
-        - Some questions allow no answer to be given. If you don't know the answer, you can skip it by leaving it empty<br>
-        - You can backtrack through the answers by opening the decision tree and selecting the question you want to go back to
+        - Some questions allow no answer to be given. If you don't know the answer, you can skip it by submitting it empty<br>
+        - You can backtrack through the answers by opening the decision tree and selecting the question you want to go back to<br>
         </p>
         """,
         unsafe_allow_html=True
@@ -64,8 +64,8 @@ if not st.session_state.app_started:
         """
     <p style="color:#71797E;">
     Created by Jarno van Tilt as part of my masters thesis <br>
-    Thesis link: https://research.tue.nl/en/studentTheses/ <br>
-    Code: https://github.com/? <br>
+    Thesis link: https://research.tue.nl/en/studentTheses/? <br>
+    Code: https://github.com/Jarnovt/Prototype-masters-thesis/ <br>
     </p>
     """,
     unsafe_allow_html=True)
