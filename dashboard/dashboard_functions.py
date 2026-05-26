@@ -3,7 +3,7 @@ import numpy as np
 import math
 
 def load_method_data():
-    df_factual = pd.read_excel("Data/Methods_final - Working Copy.xlsx")
+    df_factual = pd.read_excel("dashboard/Data/Methods_final - Working Copy.xlsx")
     # for row in df_factual.iterrows():
     #     row[1][0] = str(row[1][0]).split('","')
     # df_factual = pd.DataFrame(list(df_factual[0][1:]), columns = list(df_factual[0])[0])
@@ -12,7 +12,7 @@ def load_method_data():
     return df_factual
 
 def load_question_data():
-    df_questions = pd.read_excel("Data/Methods_final - Working Copy.xlsx", sheet_name = "Questions")
+    df_questions = pd.read_excel("dashboard/Data/Methods_final - Working Copy.xlsx", sheet_name = "Questions")
     return df_questions
 
 def alternate_IG(Df:pd.DataFrame, column_interest:str) -> float:
