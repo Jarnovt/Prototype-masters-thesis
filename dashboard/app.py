@@ -141,9 +141,9 @@ else:
             if st.button('Apply'):
                 df_approaches_modified = remove_misreq(st.session_state.df_approaches, st.session_state.original_df, selected_rows['Name'].values[0])
                 df_approaches_final = remove_add_misreq(df_approaches_modified, option)
-                st.write(":gray[Potetential evaluation approaches]")
+                st.write(":gray[Potential evaluation approaches]")
                 st.write(potential_approaches)
-                st.write(":gray[Potetential evaluation approaches with req]")
+                st.write(":gray[Potential evaluation approaches with req]")
                 st.write(df_approaches_final)
 
         # If there are more than 5 columns left over, ask a remaining questions
@@ -238,7 +238,7 @@ else:
                         df_approaches_final = remove_add_misreq(df_approaches_modified, option)
                         st.write(":gray[Potetential evaluation approaches]")
                         st.write(potential_approaches)
-                        st.write(":gray[Potetential evaluation approaches with req]")
+                        st.write(":gray[Potetential evaluation approaches matching additional requirements]")
                         st.write(df_approaches_final)
 
                 else:
